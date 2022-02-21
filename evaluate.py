@@ -127,7 +127,7 @@ def evaluate_single_layer():
         score_map_mini = np.array(dist_list).transpose(1, 0).reshape(B, H, W)
 
         # upsample
-        score_map = F.interpolate(torch.tensor(np.expand_dims(score_map_mini, 1)), size=x.size(2), mode='bicubic',
+        score_map = F.interpolate(torch.tensor(np.expand_dims(score_map_mini, 1)), size=x.size()[-2:], mode='bicubic',
                                   align_corners=False).squeeze().numpy()
 
         # apply gaussian smoothing on the score map
@@ -314,7 +314,7 @@ def evaluate_multiple_layers():
         score_map_mini = np.array(dist_list).transpose(1, 0).reshape(B, H, W)
 
         # upsample
-        score_map = F.interpolate(torch.tensor(np.expand_dims(score_map_mini, 1)), size=x.size(2), mode='bicubic',
+        score_map = F.interpolate(torch.tensor(np.expand_dims(score_map_mini, 1)), size=x.size()[-2:], mode='bicubic',
                                   align_corners=False).squeeze().numpy()
 
         # apply gaussian smoothing on the score map

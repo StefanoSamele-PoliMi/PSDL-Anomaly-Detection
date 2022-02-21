@@ -7,8 +7,8 @@ import random_mvtec
 DATA_PATH = "/data"
 SAVE_PATH = "mvtec/mvtec_result"
 # Dataset and class names to be used
-DATASET = ksdd.KolektorDataset
-CLASS_NAMES = ksdd.CLASS_NAMES
+DATASET = mvtec.MVTecDataset
+CLASS_NAMES = mvtec.CLASS_NAMES
 # Available architectures: resnet18, wide_resnet50_2, efficientnet-b5, efficientnet-b6, efficientnet-b7
 ARCH = "efficientnet-b6"
 # Available type mode: SINGLE, MULTIPLE. It will run PSDL with either one or multiple layers

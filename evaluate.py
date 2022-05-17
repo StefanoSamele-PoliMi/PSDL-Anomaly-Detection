@@ -280,8 +280,8 @@ def evaluate_multiple_layers():
             embedding_vectors = torch.cat([embedding_vectors, F.avg_pool2d(layer_1_outputs, kernel_size=[4, 4])], dim=1)
 
         else:
-            embedding_vectors = torch.cat([embedding_vectors, layer_2_outputs])
-            embedding_vectors = torch.cat([embedding_vectors, layer_1_outputs])
+            embedding_vectors = torch.cat([embedding_vectors, layer_2_outputs], dim=1)
+            embedding_vectors = torch.cat([embedding_vectors, layer_1_outputs], dim=1)
 
         # Free up memory
         del layer_1_outputs

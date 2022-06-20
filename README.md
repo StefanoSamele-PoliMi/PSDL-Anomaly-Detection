@@ -1,6 +1,6 @@
 # PSDL-Anomaly-Detection
 
-Official repository for the implementation of Patchwise Sparse Dictionary Learning from Pre-Trained Neural Network Activation Maps paper.
+Official repository for the implementation of [Patchwise Sparse Dictionary Learning from Pre-Trained Neural Network Activation Maps](), (ICPR 2022).
 
 ### Environment:
 
@@ -56,4 +56,4 @@ The code is inspired to [this](https://github.com/xiahaifeng1995/PaDiM-Anomaly-D
 
 Algorithms for sparse representation and learning dictionary come from [sparse-land-tools](https://github.com/fubel/sparselandtools).
 
-PaDiM and PatchCore are an authors reviewed versions of unoffical implementations [1](https://github.com/xiahaifeng1995/PaDiM-Anomaly-Detection-Localization-master), [2](https://github.com/hcw-00/PatchCore_anomaly_detection).
+PaDiM and PatchCore are authors reviewed versions of unoffical implementations [1](https://github.com/xiahaifeng1995/PaDiM-Anomaly-Detection-Localization-master), [2](https://github.com/hcw-00/PatchCore_anomaly_detection).
